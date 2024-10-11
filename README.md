@@ -1,3 +1,2 @@
-improved by 
-@rohit_1888
-on Tg
+UPLOADED BY @POWERMODOWNER
+ON TELEGRAM
