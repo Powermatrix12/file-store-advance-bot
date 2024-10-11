@@ -48,7 +48,7 @@ START_MSG = os.environ.get("START_MESSAGE", "ʜᴇʟʟᴏ {first}\n\nɪ ᴄᴀɴ
 #your telegram tag without @
 OWNER_TAG = os.environ.get("OWNER_TAG", "POWERMODOWNER")
 #Time in seconds for message delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "0"))
+TIME = int(os.environ.get("TIME", "57600"))
 
 
 #Shortner (token system) 
