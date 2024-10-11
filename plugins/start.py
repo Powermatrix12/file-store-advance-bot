@@ -194,14 +194,14 @@ async def start_command(client: Client, message: Message):
                     link = await get_shortlink(SHORTLINK_API_URL, SHORTLINK_API_KEY,f'{newLink}')
                     if USE_PAYMENT:
                         btn = [
-                        [InlineKeyboardButton("Click Here 👆", url=link),
-                        InlineKeyboardButton('How to open this link 👆', url=TUT_VID)],
-                        [InlineKeyboardButton("Buy Premium plan", callback_data="buy_prem")]
+                        [InlineKeyboardButton("• ᴄʟɪᴄᴋ ʜᴇʀᴇ •", url=link),
+                        InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪs ʟɪɴᴋ •', url=TUT_VID)],
+                        [InlineKeyboardButton("• ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ •", callback_data="buy_prem")]
                         ]
                     else:
                         btn = [
-                        [InlineKeyboardButton("Click Here 👆", url=link)],
-                        [InlineKeyboardButton('How to open this link 👆', url=TUT_VID)]
+                        [InlineKeyboardButton("• ᴄʟɪᴄᴋ ʜᴇʀᴇ •", url=link)],
+                        [InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪs ʟɪɴᴋ •', url=TUT_VID)]
                         ]
                     await message.reply(f"Total clicks {clicks}. Here is your link 👇.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
                     return
@@ -218,8 +218,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data="about"),
-                    InlineKeyboardButton("🔒 Close", callback_data="close")
+                    InlineKeyboardButton("😊 𝐀𝐛𝐨𝐮𝐭 𝐌𝐞", callback_data="about"),
+                    InlineKeyboardButton("🔒 𝐂𝐥𝐨𝐬𝐞", callback_data="close")
                 ]
             ]
         )
