@@ -115,7 +115,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6706434927").split()):
+    for x in (os.environ.get("ADMINS", "5904478052").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
