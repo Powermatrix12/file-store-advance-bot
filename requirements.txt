@@ -1,6 +1,5 @@
 # --- For-Bot-Working --------- #
-gunicorn
-git+https://github.com/KurimuzonAkuma/pyrogram
+pyrofork
 TgCrypto
 pyromod==1.5
 python-dotenv
